@@ -8,26 +8,61 @@
     <!-- tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- vanila css -->
+    <style>
+        .img-container {
+            border: 2px solid rebeccapurple;
+        }
+
+        .img-container img {
+            width: 100%;
+        }
+    </style>
 </head>
 
-<body>
+<body class="bg-white h-[3000px]">
     <!-- **********using tailwind************ -->
     <!-- navbar start -->
-    <nav>
-
+    <nav class="container mx-auto py-5 border">
+        <section class=" container mx-auto flex flex-col justify-between md:flex-row">
+            <div>
+                <!-- logo img -->
+                <img src="img/Logo.png" alt="" class=" container mx-auto">
+            </div>
+            <!-- menubar -->
+            <div class="text-black text-lg ">
+                <ul class="flex  gap-4 justify-center">
+                    <li>Home</li>
+                    <li>about</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </section>
     </nav>
     <!-- navbar ends -->
     <!-- banner section start -->
     <header>
-        <section>
-
+        <section class="border py-2">
+            <img src="img/Rectangle 9.png" alt="" class="w-full">
+        </section>
+        <section class="border py-2">
+            <img src="img/banner1.png" alt="" class="w-full">
         </section>
     </header>
     <!-- banner section Ends -->
     <!-- **********using tailwind************ -->
     <!-- ***************************************************************** -->
-    <!-- **********using Vanila css************ -->
-    <!-- **********using Vanila css************ -->
+    <!-- **********using Vanila css start************ -->
+    <hr>
+    <h2 class="text-black text-5xl text-center py-5">Using vanila css only for image</h2>
+    <hr>
+    <main>
+        <section class="img-container">
+            <img src="img/banner4.png" alt="" class="img">
+        </section>
+    </main>
+    <!-- **********using Vanila css ends************ -->
 
 
 </body>
